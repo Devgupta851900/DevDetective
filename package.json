@@ -1,8 +1,12 @@
 {
-	"scripts": {
-		"start": "npx tailwindcss -i ./input.css -o ./output.css --watch "
-	},
-	"devDependencies": {
-		"tailwindcss": "^3.4.3"
-	}
+  "scripts": {
+    "start": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "type": "module"
 }
