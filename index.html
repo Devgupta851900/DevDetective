@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/48a4dc95b1.js" crossorigin="anonymous"></script>
+
+    <!-- Space Mono Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        [searchBar] {
+            border: none;
+            outline: none;
+        }
+
+        .notAvail {
+            color: #788fb4;
+        }
+    </style>
+</head>
+<!-- 
+
+button -> #60abff
+
+    Light mode
+bg-> #f6f8ff
+heading-> #4b6a9b
+box -> white
+
+    dark mode
+bg -> #141d2f
+heading-> white
+box -> #1e2a47
+-->
+
+<body>
+
+    <div wrapper
+        class="h-[100vh] w-[100vw] bg-[#f6f8ff] flex flex-col justify-center items-center gap-8 font-spaceMono ">
+
+
+        <div class="w-[327px] md:w-[573px] xl:w-[730px] mx-auto ">
+
+
+            <div class="flex justify-between items-center">
+
+                <h3 heading class="font-bold text-[26px] leading-6 text-[#4b6a9b]">DevDetective</h3>
+
+                <button modeButton
+                    class="flex justify-between items-center w-[90px] uppercase text-[13px] font-bold tracking-widest"></button>
+
+            </div>
+
+            <form searchForm
+                class="relative box-border w-[100%] mt-8 flex items-center justify-between h-[72px] bg-white p-[10px] rounded-2xl shadow-black drop-shadow-md ">
+
+                <i class="fa-solid fa-magnifying-glass invisible md:visible text-[#0079ff]  text-xl absolute left-[20px]"></i>
+                <input type="text"
+                    class="overflow-hidden bg-transparent w-[65%] text-[18px] text-[#4b6a9b] placeholder:text-[18px] placeholder:text-[#4b6a9b] px-[50px]"
+                    required placeholder="Enter a Github username..." searchBar>
+
+                <button class="absolute left-[20px] md:left-[70%] xl:left-[75%] text-2xl text-[#0079ff] hidden" type="reset"><i
+                        class="fa-solid fa-xmark"></i></button>
+
+                <button type="submit" searchButton
+                    class="bg-[#0079ff] text-white font-bold rounded-xl px-7 py-[14px] ">Search</button>
+            </form>
+
+            <div profile
+                class="w-[100%] relative mt-6 bg-white rounded-2xl shadow-black drop-shadow-md p-10 text-[#4b6a9b]">
+
+                <div class=" w-[100%] max-w-[480px] xl:ml-[170px] flex flex-col gap-4">
+
+                    <div class="flex justify-center gap-10">
+
+                        <img profileImage class="object-contain mx-auto rounded-full xl:absolute md:left-0 xl:ml-[40px]"
+                            width="117px" height="117px ">
+
+                        <div class="flex flex-col xl:flex-row w-[100%] xl:justify-between ">
+                            <div class=" xl:w-[60%]">
+                                <div userName class="text-[26px] font-bold text-[#2b3442] "></div>
+                                <a profileLink class="underline text-[#0079ff] "></a>
+                            </div>
+                            <div joiningDate class="pt-[10px] xl:w-[40%]"></div>
+                        </div>
+                    </div>
+
+                    <div bio class="text-[#788fb4] font-extralight"></div>
+
+                    <div numberList
+                        class="py-5 px-8 my-5 flex justify-center items-center gap-4 bg-[#f6f8ff] rounded-md">
+
+                        <div class="flex flex-col gap-2 items-center w-[100%]">
+                            <p class="text-[13px]">Repos</p>
+                            <p repoNum class="text-2xl font-bold text-[#2b3442]">0</p>
+                        </div>
+
+                        <div class="flex flex-col gap-2 items-center w-[100%]">
+                            <p class="text-[13px]">Followers</p>
+                            <p followerNum class="text-2xl font-bold text-[#2b3442]">0</p>
+                        </div>
+
+                        <div class="flex flex-col gap-2 items-center w-[100%]">
+                            <p class="text-[13px]">Following</p>
+                            <p followingNum class="text-2xl font-bold text-[#2b3442]">0</p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex justify-start flex-wrap gap-4 ">
+                        <div class="flex items-center justify-start gap-4 md:w-[48%]">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div address></div>
+                        </div>
+                        <div class="flex items-center justify-start gap-4 md:w-[48%] ">
+                            <i class="fa-solid fa-link"></i>
+                            <a blogLink class="underline"></a>
+                        </div>
+                        <div class="flex items-center justify-start gap-4 md:w-[48%]">
+                            <i class="fa-brands fa-twitter"></i>
+                            <a twitter class="underline"></a>
+                        </div>
+                        <div class="flex items-center justify-start gap-4 md:w-[48%]">
+                            <i class="fa-solid fa-building"></i>
+                            <div institute></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
