@@ -1,4 +1,4 @@
-const token = secret.ACCESS_TOEKN;
+const token = secret.ACCESS_TOKEN;
 
 const searchForm = document.querySelector("[searchForm]");
 const searchBar = document.querySelector("[searchBar]");
